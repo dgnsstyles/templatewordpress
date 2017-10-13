@@ -17,7 +17,7 @@
                 'menu_class'        => 'nav navbar-nav ml-auto nav-item nav-link',
                 'li_class'          => 'nav-item',
                 'a_class'           => 'nav-link',
-                'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',`
+                'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
                 'walker'            => new WP_Bootstrap_Navwalker()
                 ]
             );

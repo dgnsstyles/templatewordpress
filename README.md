@@ -1,0 +1,1 @@
+Es un template de wordpress con boostrap 4 para poder generar más templates y teniendo la figura base para posteriormente poder generar varios temas particulares con dicho tema.

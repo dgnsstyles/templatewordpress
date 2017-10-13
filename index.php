@@ -57,7 +57,7 @@
         </div>
       </div>
     </section>
-
+    <hr>
     <section>
       <div class="container">
         <div class="row align-items-center">
@@ -75,7 +75,7 @@
         </div>
       </div>
     </section>
-
+      <hr>
     <section>
       <div class="container">
         <div class="row align-items-center">
@@ -93,13 +93,5 @@
         </div>
       </div>
     </section>
-
-    <!-- Footer -->
-    <footer class="py-5 bg-dark">
-      <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2017</p>
-      </div>
-      <!-- /.container -->
-    </footer>
-    <?php get_sidebar(); ?>
+   
     <?php get_footer(); ?>

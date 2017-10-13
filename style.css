@@ -9,7 +9,11 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: black, brown, orange, tan, white, yellow, light, one-column, two-columns, right-sidebar, flexible-width, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, translation-ready
 Text Domain: Portafolio
 */
-
+body
+{
+    padding-top: 50px;
+    background-color: white;
+}
 
 
 
@@ -24,11 +28,21 @@ header.masthead {
 header.masthead > .overlay {
     padding: 5rem 0;
     text-align: center;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(130, 148, 250, 0.6);
 }
 
 @media (min-width: 992px) {
     header.masthead > .overlay {
         padding: 10rem 0;
     }
+}
+li a{
+    color: white;
+    padding-right: 1em;
+    text-decoration: none;
+
+}
+li a :hover{
+    text-decoration: none;
+    text-decoration-style: none;
 }

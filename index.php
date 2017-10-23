@@ -39,7 +39,7 @@
       </ol>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img class="first-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide">
+          <img class="first-slide" src="https://picsum.photos/500/400?image=0" alt="First slide">
           <div class="container">
             <div class="carousel-caption d-none d-md-block text-left">
               <h1>Example headline.</h1>
@@ -49,7 +49,7 @@
           </div>
         </div>
         <div class="carousel-item">
-          <img class="second-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Second slide">
+          <img class="second-slide" src="https://picsum.photos/4896/3264?image=899" alt="Second slide">
           <div class="container">
             <div class="carousel-caption d-none d-md-block">
               <h1>Another example headline.</h1>
@@ -59,7 +59,7 @@
           </div>
         </div>
         <div class="carousel-item">
-          <img class="third-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">
+          <img class="third-slide" src="https://picsum.photos/1920/1288?image=968" alt="Third slide">
           <div class="container">
             <div class="carousel-caption d-none d-md-block text-right">
               <h1>One more for good measure.</h1>
@@ -133,5 +133,15 @@
         </div>
       </div>
     </section>
-   
+
+    <?php
+  $args =  ['cat' => 2];
+    if ( have_posts() ) :
+      while ( have_posts() ) : 
+        the_post();
+        //contenido del loop (template tags, html, etc)
+      endwhile;
+    endif; 
+?>
+
     <?php get_footer(); ?>

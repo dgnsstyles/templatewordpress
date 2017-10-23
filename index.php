@@ -1,36 +1,5 @@
 <?php get_header(); ?>
-<body>
-<nav class="navbar navbar-expand-lg fixed-top navbar-custom">
-    <div class="container">
-        <a class="navbar-brand" href="#"><?php bloginfo( title ); ?></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-           <?php
-            wp_nav_menu([
-                'menu'              => 'Principal',
-                'theme_location'    => 'Principal Menu',
-                'depth'             => 2,
-                'container'         => 'div',
-                'container_class'   => 'collapse navbar-collapse',
-                'container_id'      => 'navbarResponsive',
-                'menu_class'        => 'nav navbar-nav ml-auto',
-                'li_class'          => 'nav-item',
-                'a_class'           => 'nav-link',
-                'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
-                'walker'            => new WP_Bootstrap_Navwalker()
-                ]
-            );
-            
-           ?>
 
-              
-
-           
-          
-    
-      </div>
-    </nav>
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -93,17 +62,17 @@
             <div class="p-5">
               <h2 class="display-4"><a href="<?php the_permalink(); ?>" ><?php the_title(); ?></a></h2>
               <p><?php the_excerpt(); ?></p>
+              <p><?php the_author();?></p>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <?php endwhile; else: ?>
- 
-    Aquí va un mensaje en caso de que no haya posts para mostrar
- 
-<?php endif; ?>
     <hr>
+    <?php endwhile; else: ?>
+    <p>Eres un puto perdedor se te olvido poner algo en el blog</p> 
+<?php endif; ?>
+    
     <section>
       <div class="container">
         <div class="row align-items-center">

@@ -81,6 +81,7 @@
 
 
     <section>
+    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
       <div class="container">
         <div class="row align-items-center">
           <div class="col-md-6 order-2">
@@ -90,13 +91,18 @@
           </div>
           <div class="col-md-6 order-1">
             <div class="p-5">
-              <h2 class="display-4">For those about to rock...</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.</p>
+              <h2 class="display-4"><a href="<?php the_permalink(); ?>" ><?php the_title(); ?></a></h2>
+              <p><?php the_excerpt(); ?></p>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <?php endwhile; else: ?>
+ 
+    Aquí va un mensaje en caso de que no haya posts para mostrar
+ 
+<?php endif; ?>
     <hr>
     <section>
       <div class="container">
